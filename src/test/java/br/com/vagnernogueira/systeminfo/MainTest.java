@@ -1,6 +1,10 @@
 package br.com.vagnernogueira.systeminfo;
 
 import static org.junit.Assert.assertTrue;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Map;
@@ -10,7 +14,7 @@ import org.junit.Test;
 
 public class MainTest {
 
-	@Test
+	// @Test
 	public void testProperties() {
 		Properties props = System.getProperties();
 		Enumeration<?> e = props.propertyNames();
@@ -22,7 +26,7 @@ public class MainTest {
 		assertTrue(true);
 	}
 
-	@Test
+	// @Test
 	public void testEnv() {
 		Map<String, String> env = System.getenv();
 		Iterator<?> it = env.entrySet().iterator();
@@ -32,6 +36,29 @@ public class MainTest {
 					.next();
 			System.out.println(pair.getKey() + ": " + pair.getValue());
 		}
+		assertTrue(true);
+	}
+
+	// @Test
+	public void testJboss() {
+		final String[] properties = { "jboss.server.name", "jboss.host.name",
+				"jboss.node.name", "jboss.home.dir", "jboss.domain.base.dir",
+				"jboss.domain.config.dir", "java.runtime.name",
+				"java.vm.vendor", "java.runtime.version", "user.timezone",
+				"user.language", "user.country", "os.name", "os.arch",
+				"os.version" };
+		for (int i = 0; i < properties.length; i++) {
+			String propsname = properties[i];
+			String propsvalue = System.getProperty(propsname);
+			System.out.println(propsname + " :" + propsvalue);
+			assertTrue(true);
+		}
+	}
+
+	@Test
+	public void testTime() {
+		final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
+		System.out.println(df.format(new Date()));
 		assertTrue(true);
 	}
 }
