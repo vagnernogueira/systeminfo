@@ -2,9 +2,6 @@ package br.com.vagnernogueira.systeminfo;
 
 import static org.junit.Assert.assertTrue;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Map;
@@ -56,9 +53,8 @@ public class MainTest {
 	}
 
 	@Test
-	public void testTime() {
-		final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
-		System.out.println(df.format(new Date()));
+	public void defaultTest() {
+		System.out.println(Main.getHostName());
 		assertTrue(true);
 	}
 }
