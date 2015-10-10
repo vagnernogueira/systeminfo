@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import = "java.util.Map, java.util.Iterator, java.util.Properties, java.util.Enumeration" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -41,8 +42,8 @@ table.sample td {
 		</tr>
 		<%
 			// System Properties
-			java.util.Properties props = System.getProperties();
-			java.util.Enumeration e = props.propertyNames();
+			Properties props = System.getProperties();
+			Enumeration e = props.propertyNames();
 			while (e.hasMoreElements()) {
 				String key = (String) e.nextElement();
 				String value = props.getProperty(key);
@@ -64,12 +65,11 @@ table.sample td {
 		</tr>
 		<%
 			// Enviroment
-			java.util.Map<String, String> env = System.getenv();
-			java.util.Iterator<?> it = env.entrySet().iterator();
+			Map<String, String> env = System.getenv();
+			Iterator<?> it = env.entrySet().iterator();
 			while (it.hasNext()) {
 				@SuppressWarnings("unchecked")
-				java.util.Map.Entry<String, String> pair = (java.util.Map.Entry<String, String>) it
-						.next();
+				Map.Entry<String, String> pair = (Map.Entry<String, String>) it.next();
 				String vkey = pair.getKey();
 				String vValue = pair.getValue();
 		%>
