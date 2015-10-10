@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import = "java.util.Map, java.util.Iterator, java.util.Properties, java.util.Enumeration" %>
+<%@ page import = "br.com.vagnernogueira.systeminfo.Main, java.util.Map, java.util.Iterator, java.util.Properties, java.util.Enumeration" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -35,6 +35,7 @@ table.sample td {
 </head>
 <body>
 	<h1>System Properties</h1>
+	<p>Requisição: <%= Main.getTime() %></p>
 	<table class="sample">
 		<tr>
 			<td><b>Property Names</b></td>

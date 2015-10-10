@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import = "br.com.vagnernogueira.systeminfo.Main" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -33,6 +34,7 @@ table.sample td {
 </style>
 </head>
 <body>
+	<p>Requisição: <%= Main.getTime() %></p>
 	<table class="sample">
 		<tr>
 			<td><b>Property Names</b></td>
