@@ -1,8 +1,17 @@
-systeminfo: JSP que exibe informações do sistema
-SystemProperties e Variáveis de ambiente
-========================
-TODO
-	1) mostrar informações de rede
-	2) criar JSP específico para testes com jboss
+# SystemInfo
+Um pequeno projeto web/JSP para testes que exibe informações do sistema.
 
-========================
+### TODO
+
+  - Mostrar informções da rede
+  - Mostrar data e hora da requisição
+  - Contador para teste com cluster
+
+### Version
+0.0.2 - Página de testes para o jboss
+
+0.0.1 - Implementação inicial
+
+License
+----
+Apache License, Version 2.0
