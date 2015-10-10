@@ -22,7 +22,7 @@ Um pequeno projeto web/JSP para testes que exibe informações do sistema.
 
   - 0.0.2 - Página de testes para o jboss
 
-  - 0.0.1 - Implementação inicial
+  - 0.0.1 - Implementação inicial: exibe system properties e variáveis de ambiente
 
 License
 ----
