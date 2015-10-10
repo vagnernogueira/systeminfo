@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -40,12 +40,12 @@ table.sample td {
 			<td><b>Property Values</b></td>
 		</tr>
 		<%
-		// System Properties
-		java.util.Properties props = System.getProperties();
-		java.util.Enumeration e = props.propertyNames();
-	    while (e.hasMoreElements()) {
-	    	String key = (String) e.nextElement();
-	    	String value = props.getProperty(key);
+			// System Properties
+			java.util.Properties props = System.getProperties();
+			java.util.Enumeration e = props.propertyNames();
+			while (e.hasMoreElements()) {
+				String key = (String) e.nextElement();
+				String value = props.getProperty(key);
 		%>
 		<tr>
 			<td><%=key%></td>
@@ -55,7 +55,7 @@ table.sample td {
 			}
 		%>
 	</table>
-	<br/>
+	<br />
 	<h1>Enviroment</h1>
 	<table class="sample">
 		<tr>
@@ -63,14 +63,15 @@ table.sample td {
 			<td><b>Variable Values</b></td>
 		</tr>
 		<%
-		// Enviroment
-		java.util.Map<String, String> env = System.getenv();
-		java.util.Iterator<?> it = env.entrySet().iterator();
-	    while (it.hasNext()) {
-	        @SuppressWarnings("unchecked")
-	        java.util.Map.Entry<String, String> pair = (java.util.Map.Entry<String, String>) it.next();
-	        String vkey = pair.getKey();
-	        String vValue = pair.getValue();
+			// Enviroment
+			java.util.Map<String, String> env = System.getenv();
+			java.util.Iterator<?> it = env.entrySet().iterator();
+			while (it.hasNext()) {
+				@SuppressWarnings("unchecked")
+				java.util.Map.Entry<String, String> pair = (java.util.Map.Entry<String, String>) it
+						.next();
+				String vkey = pair.getKey();
+				String vValue = pair.getValue();
 		%>
 		<tr>
 			<td><%=vkey%></td>
