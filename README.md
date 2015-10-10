@@ -1,7 +1,7 @@
 # SystemInfo
 Um pequeno projeto web/JSP para testes que exibe informações do sistema.
 
-### Uso
+### Uses
 
   - http://localhost:8080/systeminfo/
 
@@ -11,18 +11,16 @@ Um pequeno projeto web/JSP para testes que exibe informações do sistema.
 
 ### TODO
 
-  - Contador para teste com cluster (Tag distributable no web.xml)
-
   - Melhorias no layout
 
-### Version
-  - 0.0.4 - Mostrar informções da rede
+### Features
+  - 4 - Mostrar informações da rede;
 
-  - 0.0.3 - Mostrar data e hora da requisição
+  - 3 - Mostrar data e hora da requisição;
 
-  - 0.0.2 - Página de testes para o jboss
+  - 2 - Página de testes para o jboss;
 
-  - 0.0.1 - Implementação inicial: exibe system properties e variáveis de ambiente
+  - 1 - Implementação inicial: exibe system properties e variáveis de ambiente.
 
 License
 ----
