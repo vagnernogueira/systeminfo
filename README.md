@@ -8,12 +8,16 @@ Um pequeno projeto web/JSP para testes que exibe informações do sistema.
   - http://localhost:8080/systeminfo/network.jsp
 
   - http://localhost:8080/systeminfo/jboss.jsp
+  
+  - http://localhost:8080/systeminfo/headers
 
 ### TODO
 
   - Melhorias no layout
 
 ### Features
+  - 5 - Mostra informações do cabeçalho da requisição
+
   - 4 - Mostrar informações da rede;
 
   - 3 - Mostrar data e hora da requisição;
