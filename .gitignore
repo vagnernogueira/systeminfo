@@ -4,3 +4,4 @@ target/
 .project
 .settings/
 .tern-project
+.vscode/
