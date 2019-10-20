@@ -1,5 +1,5 @@
 # SystemInfo
-Um pequeno projeto web/JSP para testes que exibe informações do sistema.
+Exibe informações do sistema via JSP para testes.
 
 ### Uses
 
